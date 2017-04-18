@@ -1,0 +1,13 @@
+# G-Code
+*.g
+*.gco
+*.gcode
+*.nc
+
+# Exported files
+*.stl
+*.off
+*.amf
+*.dxf
+*.svg
+*.csg
