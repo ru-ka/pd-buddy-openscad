@@ -3,16 +3,7 @@ include <MCAD/units.scad>;
 
 include <truncated_teardrop.scad>;
 
-
-sink_0_1 = [26*mm, 49*mm, 18*mm, 4*mm, 10*mm];
-sink_0_2 = [26*mm, 48*mm, 18*mm, 4*mm, 10*mm];
-sink_0_3 = [25*mm, 30*mm, 17*mm, 4*mm, 10*mm];
-
-function sink_width(board) = board[0];
-function sink_length(board) = board[1];
-function sink_screw_spacing(board) = board[2];
-function sink_screw_distance(board) = board[3];
-function sink_connector_cutout(board) = board[4];
+include <sink.scad>;
 
 
 /*
