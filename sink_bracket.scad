@@ -11,7 +11,7 @@ include <sink.scad>;
  */
 module sink_mount(layer_thickness=0.25*mm, height=8*mm, nut_depth=4*mm,
 		cutout=0.5*mm, bolt_tolerance=0.3*mm, nut_tolerance=0.05*mm,
-		board=sink_0_3) {
+		board=sink_1_0) {
 	w = sink_width(board);
 
 	difference() {
@@ -45,7 +45,7 @@ module sink_mount(layer_thickness=0.25*mm, height=8*mm, nut_depth=4*mm,
  */
 module sink_bracket(layer_thickness=0.25*mm, height=8*mm, nut_depth=4*mm,
 		cutout=0.5*mm, bolt_tolerance=0.3*mm, nut_tolerance=0.05*mm,
-		board=sink_0_3) {
+		board=sink_1_0) {
 	w = sink_width(board);
 	halfend_width = 8*mm;
 	bracket_width = w + 2*halfend_width;

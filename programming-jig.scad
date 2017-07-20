@@ -18,12 +18,12 @@ module mill_max_854_cutout(pins, h, clearance) {
 /*
  * 3D-printed part of a PD Buddy programming jig
  */
-module programming_jig(board=sink_0_3, layer_thickness=0.4*mm,
+module programming_jig(board=sink_1_0, layer_thickness=0.4*mm,
 		extrusion_width=0.6*mm, clearance=0.1*mm) {
 	/* It would be ridiculous to try to cram enough information into the board
 	 * objects to properly parameterize this, so the board is only used to set
 	 * which object we're making. */
-	if (board == sink_0_3) {
+	if (board == sink_0_3 || board == sink_1_0) {
 		/* Pin dimensions */
 		pwr_bottom = 0.212*inch;
 		pwr_stroke = 0.090*inch;

@@ -10,6 +10,8 @@ sink_0_2 = [26*mm, 48*mm, 0.8*mm, 1*mm, 18*mm, 4*mm, 10*mm, 1.25*mm,
 		 usb_conn_amphenol];
 sink_0_3 = [25*mm, 30*mm, 1.6*mm, 1*mm, 17*mm, 4*mm, 10*mm, 1.25*mm,
 		 usb_conn_amphenol];
+sink_1_0 = [25*mm, 30*mm, 1.6*mm, 1*mm, 17*mm, 4*mm, 10*mm, 1.25*mm,
+		 usb_conn_amphenol];
 
 function sink_width(board) = board[0];
 function sink_length(board) = board[1];
@@ -24,7 +26,7 @@ function sink_connector(board) = board[8];
 /*
  * A simple representation of a PD Buddy Sink circuit board
  */
-module sink(board=sink_0_3, board_color="indigo", copper_color="gold",
+module sink(board=sink_1_0, board_color="indigo", copper_color="gold",
 		connector_color="silver") {
 	difference() {
 		color(board_color)
